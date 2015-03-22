@@ -1,0 +1,36 @@
+<?php
+/* @var $this PathwayController */
+/* @var $model Pathway */
+/* @var $form CActiveForm */
+?>
+
+<div class="form">
+
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'pathway-form',
+	'enableAjaxValidation'=>false,
+)); ?>
+
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
+
+	<?php echo $form->errorSummary($model); ?>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'nombreruta'); ?>
+		<?php echo $form->textField($model,'nombreruta',array('size'=>60,'maxlength'=>500)); ?>
+		<?php echo $form->error($model,'nombreruta'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'urlruta'); ?>
+		<?php echo $form->textField($model,'urlruta',array('size'=>60,'maxlength'=>500)); ?>
+		<?php echo $form->error($model,'urlruta'); ?>
+	</div>
+
+	<div class="row buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	</div>
+
+<?php $this->endWidget(); ?>
+
+</div><!-- form -->

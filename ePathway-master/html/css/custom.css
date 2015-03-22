@@ -1,0 +1,81 @@
+/* 
+    Document   : custom
+    Created on : 01/09/2013, 02:56:30 PM
+    Author     : jpablo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+div.view{
+    overflow-x: auto
+}
+
+textarea.dna{
+    width: 100%;
+    max-width: 550px;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+
+textarea.dna:hover{
+    min-height: 150px;
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+}
+
+/* grid table */
+.grid-view table.items th
+{
+	color: white;
+        background: #006400;
+	text-align: center;
+}
+
+.grid-view table.items tr.even
+{
+	background: #F8F8F8;
+}
+
+.grid-view table.items tr.odd
+{
+	background: #eee;
+}
+
+.grid-view table.items tr.selected
+{
+	background: #BCE774;
+}
+
+.grid-view table.items tr:hover.selected
+{
+	background: #CCFF66;
+}
+
+.grid-view table.items tbody tr:hover
+{
+	background: #ECFBD4;
+}
+
+
+/* big grid stuff */
+.extended-grid{
+    overflow-x: auto;
+}
+
+.extended-grid:hover{
+    overflow-x: visible;
+}
+
+ td{
+    max-height: 10px;
+    overflow: auto;
+}
+
+ tr{
+    max-height: 10px;
+    overflow: auto;
+}
+
+select{
+    min-width: 150px;
+}
